@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>304</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/client.js" defer></script>
+    <link rel="stylesheet" href="/style.css" />   
+  </head>
+  <body>
+    
+    <h1>
+      304 Game Window
+    </h1>
+
+    <p>
+      Game: 
+    </p>
+    <p id="gameId">
+      {{gameId}}
+    </p>
+    
+    <p>
+      Your player name:
+    </p>
+    <p id="playerName">
+      {{playerName}}  
+    </p>
+  
+    {{#if maxPlayers}}
+      <p>
+        Maximum number of players reached
+      </p>
+    {{/if}}
+    
+    <p>
+      Players in the game
+    </p>
+    <p id="playerNames">      
+    </p>   
+    
+    <h3>
+      My hand
+    </h3>    
+    <p id="playerHand">
+      
+    </p>    
+
+    <h3>
+      Bidding
+    </h3>
+    <p>
+      Bid Amount
+      <input name="bidAmount" type="text" id="bidAmountInput">
+    </p>
+    <p>
+      Trump
+      <input name="trump" type="text" id="trumpInput">
+    </p>
+    <button onclick="bid()">Bid</button> 
+
+    <p>
+      Winning bid player name
+    </p>    
+    <p id="bidPlayerName">
+    </p>
+
+    <p>
+      Winning bid player amount
+    </p>    
+    <p id="bidAmount">
+    </p>
+
+    <p>
+      Trump
+    </p>
+    <p id="trump">
+    </p>  
+    
+    <h3>
+      Whose turn is it?  
+    </h3>
+    <p id="playerTurn"></p>  
+    
+    <p>
+      Card to play
+      <input name="playCard" type="text" id="playCard">
+    </p>
+
+    <button onclick="playCard()">Play Card</button>     
+    
+    <p id="notYourTurn"></p>       
+    
+    <h3>
+      Cards on the table
+    </h3>    
+    <p id="cardsOnTable"></p> 
+    
+    <h3>
+      Tricks
+    </h3>    
+    <p id="tricks">      
+    </p> 
+
+    <button onclick="playAgain()">Play Again</button> 
+    
+    <h3>
+      Chat Input
+    </h3>
+    <p>
+      <input name="chatInput" type="text" id="chatInput">
+    </p>
+
+    <button onclick="sendChat()">Send</button> 
+    
+    
+    <h2>
+      Chat Window
+    </h2>    
+    <p id="chatWindow">
+      
+    </p> 
+  </body>
+</html>
