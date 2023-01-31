@@ -2,12 +2,6 @@
 <html lang="en">
   <head>
     
-    <!-- 
-      This is the main Handlebars template for the site 
-      - When the user visits the homepage or submits a color the app calls the endpoints in server.js
-      - The server script passes data in here and the Handlebars code builds it into the HTML page
-    -->
-    
     <meta charset="utf-8" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -34,6 +28,20 @@
              Rules of 304</a>
         </p>
         
+        <p>
+          Right now you can play teenshechar with 2 and 4 people.
+          <br><br>
+          When all the players are ready, one of you has to choose a game id and communicate that
+          with the rest of the players.
+          <br><br>         
+          It will be nice to have voice or video conference call with something like whatsapp.
+          <br><br>       
+          Then, all players enter the game id, number of players, and player name in the form below and 
+          click submit. Once you click submit, you will get the game page.
+          <br><br>
+          When all players have clicked submit, the game will start.
+          
+        </p>
         <div class="color-form">      
           <form class="color-search" method="post">
               <label for="color">
@@ -50,22 +58,23 @@
         </div>
 
         <h3>
-          TODO
+          To Do List
         </h3>
         
           Appearance
           <ul>
-            <li>teams and positions</li>
-            <li>make unnecessary fields disappear</li>
             <li>Add snazzy frontend with Phaser</li>
+            <li>Show teams and positions</li>
+            <li>Show only relevant info during game play</li>
           </ul>  
           Game
           <ul>
-            <li>check play again</li>
+            <li>Trump has to be one letter</li>
+            <li>Check "play again" button</li>
             <li>Reject players with same name</li>
-            <li>error checking for player input e.g. card to play</li>
+            <li>Error checking for player input e.g. card to play</li>
             <li>Check if player follow rules</li>          
-            <li>out of turn messages</li>
+            <li>Out of turn messages</li>
             <li>new game - change first player</li>
             <li>winning team gets red/black, diwali</li>
             <li>chance 200</li>
@@ -85,7 +94,7 @@
     </div>
 
     <footer class="footer">
-     Created By Prasad Wagle and Kiran Wagle.<br>
+      Created By Prasad Wagle, Kiran Wagle, and Marie Wagle<br>
       <br>
       Please have fun!!!!!!!!!
     </footer>
